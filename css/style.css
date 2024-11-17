@@ -1,0 +1,114 @@
+:root {
+  --color-link: #343434;
+  --color-link2: #1c1c1c;
+  --font1: "Montserrat";
+  --font2: "Poppins";
+  --color-p: #748182;
+}
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+.back-black
+{
+  height: 100vh;
+opacity: 1;
+}
+.color1
+{
+  background-color: #924EBB;
+}
+.color2
+{
+  background-color: #41B8D4;
+}
+.color3
+{
+  background-color: #F9A603;
+}
+.color4
+{
+  background-color: #E73C6A;
+}
+.color5
+{
+  background-color: #7CB641;
+}
+section
+{
+  /* background-image: url(../image/download\ \(2\).jpg); */
+  background-position: center;
+ 
+  height: 100vh;
+}
+.countant
+{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #991EBB;
+}
+.up-word
+{
+  color:#E73C6A;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  z-index: 999;
+}
+.under-word 
+{
+  
+  position: absolute;
+  top: 15%;
+  background: linear-gradient(to right, #924EBB , #41B8D4, #F9A603, #E73C6A,#7CB641);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  animation: changewidth 3s infinite ease-in-out;
+  opacity:  0;
+}
+@keyframes changewidth
+{
+0%{
+		opacity:  0.2;
+	}
+	50% {
+		opacity:  1;
+	}
+  75%
+  {
+    opacity:  0.5;
+  }
+  100% {
+		opacity:  0.3;
+	}
+}
+button
+{
+  background-color: #E73C6A;
+  color: aliceblue;
+  font-size:1.3rem ;
+  border-radius: 5px;
+  align-self: flex-end;
+  box-shadow: 5px 5px 5px lightblue;
+}
+button:hover
+{
+  background-color:#FE3C6A;
+  box-shadow: 5px 5px 5px lightgray inset;
+}
+#asd1
+{
+  color: #EE3C6A;
+  text-align: center;
+  height: 40%;
+}
+#asd1 h6
+{
+  font-size: 2rem;
+}
