@@ -20,15 +20,16 @@ var quote=[
         owner:"― Marcus Tullius Cicero"
     }
 ]
-console.log(quote.length)
+
 let x= [];
 function disPlay() {
     let randomNumber;
     do {
-        randomNumber = Math.floor(Math.random() * 4);
+        randomNumber = Math.floor(Math.random() * 5);
     } while (x[x.length - 1] === randomNumber);
     
     document.getElementById("asd1").innerHTML = `<h6>${quote[randomNumber].name}</h6>
     <h6>${quote[randomNumber].owner}</h6>`;
-     
+     x.push(randomNumber)
+    
 }
