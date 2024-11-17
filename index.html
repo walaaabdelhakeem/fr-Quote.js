@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <section>
-        <div class="back-black  align-items-center justify-content-center d-flex gap-2 position-relative">
-            <div class="color1 h-100 col">.</div>
-            <div class="color2 h-100 col">.</div>
-            <div class="color3 h-100  col">..</div>
-            <div class="color4  h-100 col">.</div>
-            <div class="color5 h-100 col">.</div>
-            </div>
-        <div class=" d-flex flex-column border-3 h-75 w-75  gap-4 p-5 align-items-center justify-content-center bg-white position-absolute  countant">
-                <h1 class="under-word">Quote of the Day</h1>
-                <h1 class="up-word">Quote of the Day</h1>
-                <h5>Press the button below to recieve a random quote!</h5>
-                <div id="asd1"></div>
-                <button class="btn-dark py-2 px-3" onclick="disPlay()">New Quote</button>
-
-            </div>
+      <div
+        class="back-black align-items-center justify-content-center row gap-2 position-relative"
+      >
+        <div class="color1 h-100 col"></div>
+        <div class="color2 h-100 col"></div>
+        <div class="color3 h-100 col"></div>
+        <div class="color4 h-100 col"></div>
+        <div class="color5 h-100 col"></div>
+      </div>
+      <div
+        class="row border-3 w-75 h-75  p-5 bg-white position-absolute countant"
+      >
+        <div class="d-flex flex-column gap-4 align-items-center justify-content-center ">
+          <h1 class="under-word ">Quote of the Day</h1>
+          
+        
+        <h5>Press the button below to recieve a random quote!</h5>
+        <div class="h-50 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h4 id="asd1"></h4>
+            <h5 id="asd2"></h5>
+        </div>
+        <button class="btn-dark py-2 px-3" onclick="disPlay()">
+          New Quote
+        </button>
+    </div>
+      </div>
     </section>
-    <script src="js/main.js">
-
-    </script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

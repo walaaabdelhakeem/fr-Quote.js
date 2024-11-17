@@ -1,15 +1,8 @@
-:root {
-  --color-link: #343434;
-  --color-link2: #1c1c1c;
-  --font1: "Montserrat";
-  --font2: "Poppins";
-  --color-p: #748182;
-}
+
 *
 {
   box-sizing: border-box;
-  margin: 0;
-  border: 0;
+ 
 }
 .back-black
 {
@@ -40,7 +33,6 @@ section
 {
   /* background-image: url(../image/download\ \(2\).jpg); */
   background-position: center;
- 
   height: 100vh;
 }
 .countant
@@ -50,52 +42,27 @@ section
   transform: translate(-50%,-50%);
   color: #991EBB;
 }
-.up-word
+ .under-word
 {
   color:#E73C6A;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
-  font-size: 2.8rem;
-  z-index: 999;
-}
-.under-word 
-{
-  
-  position: absolute;
-  top: 15%;
+  font-size: 2.5em;
   background: linear-gradient(to right, #924EBB , #41B8D4, #F9A603, #E73C6A,#7CB641);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 2.8rem;
-  animation: changewidth 3s infinite ease-in-out;
-  opacity:  0;
 }
-@keyframes changewidth
-{
-0%{
-		opacity:  0.2;
-	}
-	50% {
-		opacity:  1;
-	}
-  75%
-  {
-    opacity:  0.5;
-  }
-  100% {
-		opacity:  0.3;
-	}
-}
+
+
 button
 {
   background-color: #E73C6A;
   color: aliceblue;
-  font-size:1.3rem ;
+  font-size:1.3em ;
   border-radius: 5px;
   align-self: flex-end;
   box-shadow: 5px 5px 5px lightblue;
+  border: 0;
 }
 button:hover
 {
@@ -104,11 +71,29 @@ button:hover
 }
 #asd1
 {
-  color:#55B641;
+  color:#33B641;
   text-align: center;
-  height: 40%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
-#asd1 h6
-{
-  font-size: 2rem;
+@media screen and (max-width: 768px) {
+  .under-word
+  {
+    font-size: 1.3rem;
+    
+  }
+  h4
+  {
+    font-size: 1rem;
+
+  }
+  h5
+  {
+    font-size: 0.8rem;
+
+  }
+  button
+  {
+    font-size: 0.8rem;
+  }
 }
